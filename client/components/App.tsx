@@ -1,9 +1,18 @@
+import Nav from './Nav'
+import Footer from './Footer'
+import { Outlet } from 'react-router-dom'
+
 function App() {
   return (
-    <div>
-      <h1>App</h1>
-      <p>React development has begun!</p>
-    </div>
+    <>
+      <Nav />
+
+      <div id="page-content">
+        <Outlet />
+      </div>
+
+      <Footer />
+    </>
   )
 }
 
